@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/fundoTelas">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:context="br.com.medlider.medlider.control.CadastroClienteActivity">
+
+        <TextView
+            android:id="@+id/tela_cadastro_remedio_texto_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar remédio"
+            android:textSize="35sp"
+            android:textAlignment="center" />
+        <EditText
+            android:id="@+id/tela_cadastro_remedio_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o nome do remédio:"
+            android:inputType="textAutoComplete"
+            android:layout_marginTop="40dp"/>
+        <EditText
+            android:id="@+id/tela_cadastro_remedio_principio_ativo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o princípio ativo do remédio:"
+            android:inputType="textAutoComplete"/>
+        <Spinner
+            android:id="@+id/tela_cadastro_remedio_dosagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/dosagem"
+            android:textDirection="locale"
+            android:layout_gravity="start"
+            android:textAlignment="textStart" />
+        <EditText
+            android:id="@+id/tela_cadastro_remedio_quantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite a quantidade:"
+            android:inputType="number"
+            android:layout_marginBottom="7dp"/>
+        <TextView
+            android:id="@+id/tela_cadastro_remedio_data_validade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data de validade, clique aqui!"
+            android:textSize="20sp"
+            android:clickable="true"/>
+
+        <EditText
+            android:id="@+id/tela_cadastro_remedio_lote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Informe o lote"
+            android:inputType="text"
+            android:layout_marginTop="7dp"/>
+        <Spinner
+            android:id="@+id/tela_cadastro_remedio_tipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/tipo"
+            android:textDirection="locale"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"/>
+        <EditText
+            android:id="@+id/tela_cadastro_remedio_preco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Informe o preço de venda"
+            android:inputType="number"
+            android:layout_marginTop="7dp"/>
+
+
+    </LinearLayout>
+</ScrollView>

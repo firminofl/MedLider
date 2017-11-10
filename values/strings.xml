@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MedLider</string>
+
+    <string-array name="tipo">
+        <item>Escolha o tipo de remédio</item>
+        <item>Genérico</item>
+        <item>Similar</item>
+        <item>Referência</item>
+    </string-array>
+
+    <string-array name="dosagem">
+        <item>Escolha o tipo de dosagem</item>
+        <item>Comprimido</item>
+        <item>Ml</item>
+        <item>Gotas</item>
+        <item>Injetável</item>
+        <item>Dose</item>
+        <item>Miligrama</item>
+    </string-array>
+
+</resources>

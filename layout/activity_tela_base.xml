@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundoTelas"
+    tools:context="br.com.medlider.medlider.control.TelaBaseActivity">
+
+    <Button
+        android:id="@+id/tela_base_botao_cadastrar_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliente"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/tela_base_botao_cadastrar_remedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remédio"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+    <Button
+        android:id="@+id/tela_base_botao_editar_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliente"
+        android:layout_below="@+id/tela_base_text_view_editar"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <Button
+        android:id="@+id/tela_base_botao_editar_remedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remédio"
+        android:layout_alignBaseline="@+id/tela_base_botao_editar_cliente"
+        android:layout_alignBottom="@+id/tela_base_botao_editar_cliente"
+        android:layout_alignLeft="@+id/tela_base_botao_cadastrar_remedio"
+        android:layout_alignStart="@+id/tela_base_botao_cadastrar_remedio" />
+
+    <Button
+        android:id="@+id/tela_base_botao_listar_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliente"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/tela_base_botao_listar_remedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remédio"
+        android:layout_alignBaseline="@+id/tela_base_botao_listar_cliente"
+        android:layout_alignBottom="@+id/tela_base_botao_listar_cliente"
+        android:layout_alignLeft="@+id/tela_base_botao_editar_remedio"
+        android:layout_alignStart="@+id/tela_base_botao_editar_remedio" />
+
+    <Button
+        android:id="@+id/tela_base_botao_excluir_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliente"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/tela_base_botao_excluir_remedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remédio"
+        android:layout_alignBaseline="@+id/tela_base_botao_excluir_cliente"
+        android:layout_alignBottom="@+id/tela_base_botao_excluir_cliente"
+        android:layout_alignLeft="@+id/tela_base_botao_listar_remedio"
+        android:layout_alignStart="@+id/tela_base_botao_listar_remedio" />
+
+    <TextView
+        android:id="@+id/tela_base_text_view_editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        android:textSize="20sp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/tela_base_botao_cadastrar_remedio"
+        android:layout_alignLeft="@+id/tela_base_botao_editar_cliente"
+        android:layout_alignStart="@+id/tela_base_botao_editar_cliente" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excluir"
+        android:textSize="20sp"
+        android:layout_below="@+id/tela_base_botao_listar_remedio"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Listar"
+        android:textSize="20sp"
+        android:layout_below="@+id/tela_base_botao_editar_remedio"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@color/fundoTelas">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:context="br.com.medlider.medlider.control.CadastroClienteActivity">
+
+        <TextView
+            android:id="@+id/tela_concluir_venda_texto_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Concluir venda"
+            android:textSize="35sp"
+            android:textAlignment="center" />
+        <EditText
+            android:id="@+id/tela_concluir_venda_nome_remedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o nome do remédio:"
+            android:inputType="textAutoComplete"
+            android:layout_marginTop="40dp"/>
+        <Spinner
+            android:id="@+id/tela_concluir_venda_tipo_remedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/tipo"
+            android:textDirection="locale"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"/>
+
+        <EditText
+            android:id="@+id/tela_concluir_venda_preco_remedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Informe o preço de venda"
+            android:inputType="number"
+            android:layout_marginTop="7dp"/>
+        <EditText
+            android:id="@+id/tela_concluir_venda_quantidade_remedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantidade a ser vendida"
+            android:inputType="number"
+            android:text="0"
+            android:layout_marginTop="7dp"/>
+
+        <TextView
+            android:id="@+id/tela_concluir_venda_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total da venda"
+            android:layout_marginTop="7dp"
+            android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/tela_concluir_venda_nome_cliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome cliente"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/tela_concluir_venda_CPF_cliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CPF"
+                android:layout_marginTop="7dp"
+                android:textSize="18sp"/>
+        </LinearLayout>
+</ScrollView>
